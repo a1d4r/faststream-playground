@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: faststream-playground:latest
+    volumes:
+      - ./app:/app/app
+volumes:
+  db-data: {}
+  cache-data: {}
