@@ -64,7 +64,7 @@ disallow_incomplete_defs = false
 [tool.pytest.ini_options]
 # https://docs.pytest.org/en/6.2.x/customize.html#pyproject-toml
 # https://docs.pytest.org/en/latest/reference/reference.html#ini-options-ref
-filterwarnings = ["error", "ignore::DeprecationWarning"]
+filterwarnings = ["error", "ignore::DeprecationWarning", "ignore::ImportWarning"]
 testpaths = ["app", "tests"]
 xfail_strict = true
 
